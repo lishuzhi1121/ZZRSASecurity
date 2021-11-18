@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B15336772670A070002EC17D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B15336762670A070002EC17D /* AppDelegate.m */; };
+		B153367A2670A070002EC17D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B15336792670A070002EC17D /* SceneDelegate.m */; };
+		B153367D2670A070002EC17D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B153367C2670A070002EC17D /* ViewController.m */; };
+		B15336802670A070002EC17D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B153367E2670A070002EC17D /* Main.storyboard */; };
+		B15336822670A072002EC17D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15336812670A072002EC17D /* Assets.xcassets */; };
+		B15336852670A072002EC17D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15336832670A072002EC17D /* LaunchScreen.storyboard */; };
+		B15336882670A072002EC17D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B15336872670A072002EC17D /* main.m */; };
+		B15336902670A089002EC17D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B153368F2670A089002EC17D /* Security.framework */; };
+		B15336942670A0D3002EC17D /* ZZRSAUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B15336932670A0D3002EC17D /* ZZRSAUtil.m */; };
+		B153369C2671F6AE002EC17D /* rsa_1024_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = B153369A2671F6AE002EC17D /* rsa_1024_public_key.pem */; };
+		B153369E2671FA5E002EC17D /* rsa_1024_private_key_pkcs8.pem in Resources */ = {isa = PBXBuildFile; fileRef = B153369D2671FA5E002EC17D /* rsa_1024_private_key_pkcs8.pem */; };
+		B15336A1267201D2002EC17D /* rsa_2048_private_key_pkcs8.pem in Resources */ = {isa = PBXBuildFile; fileRef = B153369F267201D2002EC17D /* rsa_2048_private_key_pkcs8.pem */; };
+		B15336A2267201D2002EC17D /* rsa_2048_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = B15336A0267201D2002EC17D /* rsa_2048_public_key.pem */; };
+		B17CCFE92674E4230061C83C /* ZZRSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B17CCFE82674E4230061C83C /* ZZRSAEncryptor.m */; };
+		B1AEEC40274681FF001B07EE /* rsa_2048_public.der in Resources */ = {isa = PBXBuildFile; fileRef = B1AEEC3B274681FF001B07EE /* rsa_2048_public.der */; };
+		B1AEEC41274681FF001B07EE /* rsa_2048_cert.crt in Resources */ = {isa = PBXBuildFile; fileRef = B1AEEC3C274681FF001B07EE /* rsa_2048_cert.crt */; };
+		B1AEEC42274681FF001B07EE /* rsa_2048_private.pem in Resources */ = {isa = PBXBuildFile; fileRef = B1AEEC3D274681FF001B07EE /* rsa_2048_private.pem */; };
+		B1AEEC43274681FF001B07EE /* rsa_2048_cert.csr in Resources */ = {isa = PBXBuildFile; fileRef = B1AEEC3E274681FF001B07EE /* rsa_2048_cert.csr */; };
+		B1AEEC44274681FF001B07EE /* rsa_2048_private.p12 in Resources */ = {isa = PBXBuildFile; fileRef = B1AEEC3F274681FF001B07EE /* rsa_2048_private.p12 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B15336722670A070002EC17D /* ZZRSADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZRSADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15336752670A070002EC17D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B15336762670A070002EC17D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B15336782670A070002EC17D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B15336792670A070002EC17D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B153367B2670A070002EC17D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B153367C2670A070002EC17D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B153367F2670A070002EC17D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B15336812670A072002EC17D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B15336842670A072002EC17D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B15336862670A072002EC17D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15336872670A072002EC17D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B153368F2670A089002EC17D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B15336922670A0D3002EC17D /* ZZRSAUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZRSAUtil.h; sourceTree = "<group>"; };
+		B15336932670A0D3002EC17D /* ZZRSAUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZRSAUtil.m; sourceTree = "<group>"; };
+		B153369A2671F6AE002EC17D /* rsa_1024_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_1024_public_key.pem; sourceTree = "<group>"; };
+		B153369D2671FA5E002EC17D /* rsa_1024_private_key_pkcs8.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_1024_private_key_pkcs8.pem; sourceTree = "<group>"; };
+		B153369F267201D2002EC17D /* rsa_2048_private_key_pkcs8.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_2048_private_key_pkcs8.pem; sourceTree = "<group>"; };
+		B15336A0267201D2002EC17D /* rsa_2048_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_2048_public_key.pem; sourceTree = "<group>"; };
+		B17CCFE72674E4230061C83C /* ZZRSAEncryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZRSAEncryptor.h; sourceTree = "<group>"; };
+		B17CCFE82674E4230061C83C /* ZZRSAEncryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZRSAEncryptor.m; sourceTree = "<group>"; };
+		B1AEEC3B274681FF001B07EE /* rsa_2048_public.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = rsa_2048_public.der; sourceTree = "<group>"; };
+		B1AEEC3C274681FF001B07EE /* rsa_2048_cert.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_2048_cert.crt; sourceTree = "<group>"; };
+		B1AEEC3D274681FF001B07EE /* rsa_2048_private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_2048_private.pem; sourceTree = "<group>"; };
+		B1AEEC3E274681FF001B07EE /* rsa_2048_cert.csr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_2048_cert.csr; sourceTree = "<group>"; };
+		B1AEEC3F274681FF001B07EE /* rsa_2048_private.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rsa_2048_private.p12; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B153366F2670A070002EC17D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15336902670A089002EC17D /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B15336692670A070002EC17D = {
+			isa = PBXGroup;
+			children = (
+				B15336742670A070002EC17D /* ZZRSADemo */,
+				B15336732670A070002EC17D /* Products */,
+				B153368E2670A089002EC17D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B15336732670A070002EC17D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B15336722670A070002EC17D /* ZZRSADemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B15336742670A070002EC17D /* ZZRSADemo */ = {
+			isa = PBXGroup;
+			children = (
+				B15336982671F50E002EC17D /* PemFiles */,
+				B15336912670A0A9002EC17D /* RSAUtil */,
+				B15336752670A070002EC17D /* AppDelegate.h */,
+				B15336762670A070002EC17D /* AppDelegate.m */,
+				B15336782670A070002EC17D /* SceneDelegate.h */,
+				B15336792670A070002EC17D /* SceneDelegate.m */,
+				B153367B2670A070002EC17D /* ViewController.h */,
+				B153367C2670A070002EC17D /* ViewController.m */,
+				B153367E2670A070002EC17D /* Main.storyboard */,
+				B15336812670A072002EC17D /* Assets.xcassets */,
+				B15336832670A072002EC17D /* LaunchScreen.storyboard */,
+				B15336862670A072002EC17D /* Info.plist */,
+				B15336872670A072002EC17D /* main.m */,
+			);
+			path = ZZRSADemo;
+			sourceTree = "<group>";
+		};
+		B153368E2670A089002EC17D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B153368F2670A089002EC17D /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B15336912670A0A9002EC17D /* RSAUtil */ = {
+			isa = PBXGroup;
+			children = (
+				B17CCFE72674E4230061C83C /* ZZRSAEncryptor.h */,
+				B17CCFE82674E4230061C83C /* ZZRSAEncryptor.m */,
+				B15336922670A0D3002EC17D /* ZZRSAUtil.h */,
+				B15336932670A0D3002EC17D /* ZZRSAUtil.m */,
+			);
+			path = RSAUtil;
+			sourceTree = "<group>";
+		};
+		B15336982671F50E002EC17D /* PemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B1AEEC3A274681FF001B07EE /* p12 */,
+				B153369A2671F6AE002EC17D /* rsa_1024_public_key.pem */,
+				B153369D2671FA5E002EC17D /* rsa_1024_private_key_pkcs8.pem */,
+				B15336A0267201D2002EC17D /* rsa_2048_public_key.pem */,
+				B153369F267201D2002EC17D /* rsa_2048_private_key_pkcs8.pem */,
+			);
+			path = PemFiles;
+			sourceTree = "<group>";
+		};
+		B1AEEC3A274681FF001B07EE /* p12 */ = {
+			isa = PBXGroup;
+			children = (
+				B1AEEC3B274681FF001B07EE /* rsa_2048_public.der */,
+				B1AEEC3D274681FF001B07EE /* rsa_2048_private.pem */,
+				B1AEEC3C274681FF001B07EE /* rsa_2048_cert.crt */,
+				B1AEEC3E274681FF001B07EE /* rsa_2048_cert.csr */,
+				B1AEEC3F274681FF001B07EE /* rsa_2048_private.p12 */,
+			);
+			name = p12;
+			path = ../../../../ZZRSAEncryptor/ZZRSAEncryptorDemo/ZZRSAEncryptorDemo/PemFiles/p12;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B15336712670A070002EC17D /* ZZRSADemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B153368B2670A072002EC17D /* Build configuration list for PBXNativeTarget "ZZRSADemo" */;
+			buildPhases = (
+				B153366E2670A070002EC17D /* Sources */,
+				B153366F2670A070002EC17D /* Frameworks */,
+				B15336702670A070002EC17D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZZRSADemo;
+			productName = ZZRSADemo;
+			productReference = B15336722670A070002EC17D /* ZZRSADemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B153366A2670A070002EC17D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B15336712670A070002EC17D = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = B153366D2670A070002EC17D /* Build configuration list for PBXProject "ZZRSADemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B15336692670A070002EC17D;
+			productRefGroup = B15336732670A070002EC17D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B15336712670A070002EC17D /* ZZRSADemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B15336702670A070002EC17D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1AEEC44274681FF001B07EE /* rsa_2048_private.p12 in Resources */,
+				B153369C2671F6AE002EC17D /* rsa_1024_public_key.pem in Resources */,
+				B15336A1267201D2002EC17D /* rsa_2048_private_key_pkcs8.pem in Resources */,
+				B15336A2267201D2002EC17D /* rsa_2048_public_key.pem in Resources */,
+				B1AEEC42274681FF001B07EE /* rsa_2048_private.pem in Resources */,
+				B15336852670A072002EC17D /* LaunchScreen.storyboard in Resources */,
+				B15336822670A072002EC17D /* Assets.xcassets in Resources */,
+				B1AEEC40274681FF001B07EE /* rsa_2048_public.der in Resources */,
+				B153369E2671FA5E002EC17D /* rsa_1024_private_key_pkcs8.pem in Resources */,
+				B1AEEC43274681FF001B07EE /* rsa_2048_cert.csr in Resources */,
+				B1AEEC41274681FF001B07EE /* rsa_2048_cert.crt in Resources */,
+				B15336802670A070002EC17D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B153366E2670A070002EC17D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B153367D2670A070002EC17D /* ViewController.m in Sources */,
+				B15336772670A070002EC17D /* AppDelegate.m in Sources */,
+				B15336942670A0D3002EC17D /* ZZRSAUtil.m in Sources */,
+				B17CCFE92674E4230061C83C /* ZZRSAEncryptor.m in Sources */,
+				B15336882670A072002EC17D /* main.m in Sources */,
+				B153367A2670A070002EC17D /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B153367E2670A070002EC17D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B153367F2670A070002EC17D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B15336832670A072002EC17D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B15336842670A072002EC17D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B15336892670A072002EC17D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B153368A2670A072002EC17D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B153368C2670A072002EC17D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q44Z5857F;
+				INFOPLIST_FILE = ZZRSADemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quvideo.ZZRSADemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B153368D2670A072002EC17D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q44Z5857F;
+				INFOPLIST_FILE = ZZRSADemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quvideo.ZZRSADemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B153366D2670A070002EC17D /* Build configuration list for PBXProject "ZZRSADemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15336892670A072002EC17D /* Debug */,
+				B153368A2670A072002EC17D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B153368B2670A072002EC17D /* Build configuration list for PBXNativeTarget "ZZRSADemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B153368C2670A072002EC17D /* Debug */,
+				B153368D2670A072002EC17D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B153366A2670A070002EC17D /* Project object */;
+}
