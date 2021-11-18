@@ -1,11 +1,14 @@
 # ZZRSASecurity
-基于RSA公钥算法的加密解密工具库iOS OC语言实现，依赖iOS系统的Security.framework。
+基于RSA公钥算法的加密解密工具库iOS OC语言实现，依赖iOS系统的Security.framework。 **完美支持公钥加密私钥解密，或者私钥加密公钥解密。** 🎉
 
 ##  RSA公钥算法
 
 算法原理参考：
 * [RSA算法原理（一）](ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html) 
 * [RSA算法原理（二）](http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html)
+
+> ps: 基于iOS系统的Security.framework实现好像并不太需要知道原理～ 😂 想要加深了解RSA算法的代码实现可以参考我的 [RSA公钥加密算法基于大数计算的iOS OC语言实现](https://github.com/lishuzhi1121/ZZRSAEncryptor)
+
 
 ## RSA密钥证书的生成
 
